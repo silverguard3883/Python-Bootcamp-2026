@@ -36,13 +36,15 @@ while not game_over:
 
     """Snake hits a wall"""
     if snake.snake_head.xcor() > 280 or snake.snake_head.xcor() < -280 or snake.snake_head.ycor() < -280 or snake.snake_head.ycor() > 280:
-        game_over = True
+        scoreboard.reset_score()
 
     """Snake hits its tail"""
     for segment in snake.snake_segments[1:]:                #Slices segments, bypassing first segment
-        if snake.snake_head.distance(segment) < 10:
-            game_over = True
-            scoreboard.game_over()
+        if segment == snake.snake_head:
+            pass
+        elif snake.snake_head.distance(segment) < 10:
+            scoreboard.reset_score()
+            snake.reset()
 
 
 

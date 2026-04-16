@@ -53,3 +53,5 @@ create_pixel_endpoint = f"{PIXELA_ENDPOINT}/{USERNAME}/graphs/graph1"
 requests.post(url=create_pixel_endpoint, json=PIXEL_PARAMETERS, headers=headers)
 
 
+
+

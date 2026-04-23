@@ -1,0 +1,75 @@
+"""This is an example of inline CSS"""
+#Best for single element
+<html style="background:blue"></html>
+
+
+
+"""This is an example of internal CSS"""
+#Best for single webpage
+<style>
+html {
+    background: red;
+}
+</style>
+
+
+"""This is an example of external CSS"""
+#Best for an entire website
+
+<link rel="stylesheet" href="./day_43.css"/>
+
+"""CSS Selectors"""
+
+h1{
+    color: red
+}
+
+<h1>This text is red</h1>
+
+"This is a CLASS selector"
+#Best for multiple elements
+.red-heading{
+    color: red
+}
+
+<h2 class="red-heading">This text is also red</h2>
+
+"This is an ID selector"
+#Best for a single element
+#main{
+    color: red
+}
+
+<h3 id="main">Red test</h3>
+
+"This is an ATTRIBUTE selector"
+#Applies to all elements with the attribute
+
+p[draggable]{
+    color:red
+}
+
+<p draggable="true">This element can be dragged</p>
+
+"This is a UNIVERSAL selector"
+#Applies to all elements
+
+*{
+    color: red
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
